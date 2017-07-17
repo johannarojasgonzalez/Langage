@@ -20,6 +20,7 @@ const  logAsync = (logPath, msg, cb) => {
   fs.appendFile(logPath, msg + '\n', cb);
 };
 
+// async
 const logsAsync = () => {
   logAsync('logs/app.log', 'Ligne 1', () => {
     logAsync('logs/app.log', 'Ligne 2', () => {
